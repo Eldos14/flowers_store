@@ -20,9 +20,14 @@ function FlowerPage({ addToCart }) {
         <p>{flower.description}</p>
         <p style={styles.price}>{flower.price} ₽</p>
         {/* добавляем обработчик */}
-        <button style={styles.button} onClick={() => addToCart(flower)}>
-          Добавить в корзину 🛒
-        </button>
+        <button
+      style={styles.button}
+      onClick={() => {
+      addToCart(flower); // добавляем в корзину
+      alert(`${flower.name} добавлен в корзину! 🛒`); // уведомление
+      }}>
+      Добавить в корзину 🛒
+      </button>
         <p><Link to="/catalog" style={styles.back}>← Назад в каталог</Link></p>
       </main>
     );
