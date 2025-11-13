@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import header from './components/Header';
-import footer from './components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import Catalog from './pages/Catalog';
