@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  main section {
+    margin-bottom: 40px;
+  }
+}
